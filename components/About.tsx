@@ -115,6 +115,46 @@ const About: React.FC = () => {
           </motion.div>
 
         </div>
+
+        {/* Clinic Centers Posters */}
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mt-24 border-t border-white/5 pt-16"
+        >
+          <div className="text-center mb-12">
+            <h2 className="text-emerald-400 font-medium text-sm tracking-wide uppercase mb-2">Our Presence</h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-white">Visit Our Centers</h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { src: "/gopalganj poster.jpeg", alt: "Gopalganj Hospital Branch", label: "Gopalganj (Main Branch)", days: "Mon, Tue, Wed" },
+              { src: "/janta Bazar Poster.jpeg", alt: "Janta Bazar Branch", label: "Janta Bazar (Saran)", days: "Thu, Fri, Sat" },
+              { src: "/Kasdewra Poster.jpeg", alt: "Kasdewra Bangra Branch", label: "Kasdewra Bangra", days: "Sunday Only" }
+            ].map((poster, idx) => (
+              <div key={idx} className="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl flex flex-col">
+                <div className="w-full bg-zinc-900 overflow-hidden">
+                  {/* Placeholder fallback if image missing */}
+                  <img 
+                    src={poster.src} 
+                    alt={poster.alt} 
+                    className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = "https://placehold.co/600x800/10b981/ffffff?text=" + encodeURIComponent(poster.label);
+                    }}
+                  />
+                </div>
+                <div className="p-6 bg-zinc-900/50 border-t border-white/5">
+                  <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider mb-1">{poster.days}</p>
+                  <p className="text-white font-bold text-lg">{poster.label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
