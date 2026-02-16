@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                <span className="text-xl font-bold text-white">Delhi<span className="text-emerald-400">Dental</span></span>
             </div>
             <p className="text-gray-400 max-w-sm mb-6">
-              Experience ultra-premium dental care in Gopalganj. Dr. Shahroz Raza and his team are dedicated to your smile and hygiene.
+              Experience ultra-premium dental care in Gopalganj,Siwan,Saran. Dr. Shahroz Raza and his team are dedicated to your smile and hygiene.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-emerald-500 hover:text-white transition-all"><Facebook size={18} /></a>

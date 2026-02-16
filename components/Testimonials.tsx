@@ -54,7 +54,7 @@ const Testimonials: React.FC = () => {
         </div>
         
         <div className="mt-12 text-center">
-            <a href="https://g.page/r/YOUR_GOOGLE_MAPS_LINK" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-6 py-3 border border-white/20 text-white rounded-full hover:bg-white/10 transition-colors">
+            <a href="https://www.google.com/search?q=Delhi+Dental+Clinic+Gopalganj+Bihar#lrd=0x39931b0d3dee93b7:0x93387aff5e21c12a,3" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-6 py-3 border border-white/20 text-white rounded-full hover:bg-white/10 transition-colors">
                 Write a Review
             </a>
         </div>
