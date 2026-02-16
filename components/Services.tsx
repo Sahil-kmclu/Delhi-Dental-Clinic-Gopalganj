@@ -80,7 +80,7 @@ const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-emerald-400 font-semibold tracking-wide uppercase text-sm mb-2">Our Expertise</h2>
-          <h3 className="text-3xl md:text-5xl font-bold text-white mb-4">World-Class Dental Services</h3>
+          <h3 className="text-3xl md:text-5xl font-bold text-white mb-4">Comprehensive Hospital Services</h3>
           <p className="text-gray-400 max-w-2xl mx-auto">
             We use the latest technology and techniques to ensure your treatment is effective, painless, and long-lasting.
           </p>

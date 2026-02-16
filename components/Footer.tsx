@@ -43,8 +43,13 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">© 2026 Delhi Dental Clinic. All Rights Reserved.</p>
-          <p className="text-gray-600 text-xs">Designed with precision in Gopalganj.</p>
+          <p className="text-gray-500 text-sm">© 2026 Delhi Dental Hospital. All Rights Reserved.</p>
+          <div className="flex flex-col items-center md:items-end">
+            <p className="text-gray-600 text-xs mb-1">Designed & Developed by</p>
+            <p className="text-emerald-500/80 text-sm font-medium hover:text-emerald-400 transition-colors cursor-default">
+              Sahil Raja
+            </p>
+          </div>
         </div>
       </div>
     </footer>

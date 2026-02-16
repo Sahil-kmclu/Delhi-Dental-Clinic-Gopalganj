@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-white leading-none">
-                Delhi<span className="text-emerald-400">Dental</span>
+                Delhi<span className="text-emerald-400">Dental Hospital</span>
               </span>
               <span className="text-[10px] text-gray-400 tracking-widest uppercase">Gopalganj</span>
             </div>

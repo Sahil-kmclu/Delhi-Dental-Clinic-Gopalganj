@@ -12,7 +12,7 @@ const FloatingWhatsApp: React.FC = () => {
   }, []);
 
   const phoneNumber = "919990866642";
-  const message = encodeURIComponent("Hello Delhi Dental Clinic, I would like to book a dental appointment.");
+  const message = encodeURIComponent("Hello Delhi Dental Hospital, I would like to book a dental appointment.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (

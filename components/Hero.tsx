@@ -4,7 +4,7 @@ import { ArrowRight, Star } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-clinic-black z-0">
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-900/20 rounded-full blur-[120px] mix-blend-screen animate-pulse"></div>
@@ -37,9 +37,9 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight mb-6"
         >
-          Premium Dental Care <br />
+          Delhi Dental <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-emerald-400 to-blue-500">
-            in Gopalganj
+            Hospital & Care
           </span>
         </motion.h1>
 
@@ -50,8 +50,8 @@ const Hero: React.FC = () => {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed"
         >
-          Experience modern, comfortable, and trusted dental treatment with precision and care. 
-          Your smile deserves the best.
+          Experience world-class multi-specialty dental treatment at Delhi Dental Hospital. 
+          Expert care across multiple locations for your convenience.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
           className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
         >
           <a
-            href="https://wa.me/919990866642?text=Hello%20Delhi%20Dental%20Clinic,%20I%20would%20like%20to%20book%20a%20dental%20appointment."
+            href="https://wa.me/919990866642?text=Hello%20Delhi%20Dental%20Hospital,%20I%20would%20like%20to%20book%20a%20dental%20appointment."
             className="group relative px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_40px_rgba(16,185,129,0.3)]"
           >
             <span>Book via WhatsApp</span>
