@@ -1,9 +1,9 @@
 import React from 'react';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Youtube } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black border-t border-white/5 pt-16 pb-8">
+    <footer className="relative z-[60] bg-black border-t border-white/5 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
@@ -16,10 +16,46 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 max-w-sm mb-6">
               Experience ultra-premium dental care in Gopalganj,Siwan,Saran. Dr. Shahroz Raza and his team are dedicated to your smile and hygiene.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-emerald-500 hover:text-white transition-all"><Facebook size={18} /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-pink-500 hover:text-white transition-all"><Instagram size={18} /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-400 hover:text-white transition-all"><Twitter size={18} /></a>
+            <div className="flex gap-4 relative z-[70]">
+              <button 
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.open('https://www.facebook.com/shahroz.raza.35', '_blank', 'noopener,noreferrer');
+                }}
+                aria-label="Visit our Facebook page"
+                title="Facebook Profile"
+                className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg shadow-blue-500/20 group"
+              >
+                <Facebook size={24} className="pointer-events-none group-hover:scale-110 transition-transform" />
+              </button>
+              <button 
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.open('https://www.instagram.com/delhidentalclinic?utm_source=qr&igsh=MXM2c3I2NXoxMjFubw==', '_blank', 'noopener,noreferrer');
+                }}
+                aria-label="Visit our Instagram page"
+                title="Instagram Profile"
+                className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-pink-500 hover:text-white hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg shadow-pink-500/20 group"
+              >
+                <Instagram size={24} className="pointer-events-none group-hover:scale-110 transition-transform" />
+              </button>
+              <button 
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.open('https://youtube.com/@shahrozraza2334?si=K1Ky-UctE4TOtXBu', '_blank', 'noopener,noreferrer');
+                }}
+                aria-label="Visit our YouTube channel"
+                title="YouTube Channel"
+                className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg shadow-red-500/20 group"
+              >
+                <Youtube size={24} className="pointer-events-none group-hover:scale-110 transition-transform" />
+              </button>
             </div>
           </div>
           
