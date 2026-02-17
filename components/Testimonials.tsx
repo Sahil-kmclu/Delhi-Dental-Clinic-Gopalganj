@@ -53,6 +53,54 @@ const Testimonials: React.FC = () => {
           ))}
         </div>
         
+        {/* Video Review Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mt-16 max-w-7xl mx-auto"
+        >
+          <div className="bg-zinc-900/30 border border-white/5 rounded-3xl p-4 md:p-8 backdrop-blur-sm">
+            <div className="text-center mb-8">
+              <h4 className="text-2xl font-bold text-white mb-2">Video Testimonials</h4>
+              <p className="text-gray-400">Watch our patients share their experiences</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Video 1 */}
+              <div className="flex flex-col gap-3">
+                <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/5 group">
+                  <video 
+                    controls 
+                    className="w-full h-full object-contain"
+                    preload="metadata"
+                  >
+                    <source src="/review.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p className="text-center text-gray-400 text-sm">Patient Review 1</p>
+              </div>
+
+              {/* Video 2 */}
+              <div className="flex flex-col gap-3">
+                <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/5 group">
+                  <video 
+                    controls 
+                    className="w-full h-full object-contain"
+                    preload="metadata"
+                  >
+                    <source src="/review 2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p className="text-center text-gray-400 text-sm">Patient Review 2</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         <div className="mt-12 text-center">
             <a href="https://www.google.com/search?q=Delhi+Dental+Clinic+Gopalganj+Bihar#lrd=0x39931b0d3dee93b7:0x93387aff5e21c12a,3" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-6 py-3 border border-white/20 text-white rounded-full hover:bg-white/10 transition-colors">
                 Write a Review
